@@ -1,0 +1,106 @@
+/* PT Serif R-400*/
+@font-face {
+  font-family: "PT Serif R-400";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptserif/v17/EJRTQgYoZZY2vCFuvAFT_r21cg.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* PT Serif R-400-Italic */
+
+@font-face {
+  font-family: "PT Serif R-400-Italic";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptserif/v17/EJRQQgYoZZY2vCFuvAFT9gaQZynfoA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* PT Serif B-700 */
+@font-face {
+  font-family: "PT Serif B-700";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptserif/v17/EJRVQgYoZZY2vCFuvAFWzr8.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* PT Serif B-700-Italic */
+@font-face {
+  font-family: "PT Serif B-700-Italic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptserif/v17/EJRSQgYoZZY2vCFuvAnt66qSVys.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "PT Serif";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin-top: 1%;
+  position: fixed;
+
+  width: 100%;
+  z-index: 10;
+}
+
+header .nav-bar {
+  margin-left: 25%;
+  width: 50%;
+}
+
+header .navigation {
+  padding: 0%;
+}
+header .navigation .select {
+  font-family: "Pt Serif R-400-Italic";
+  font-size: 20px;
+  font-weight: lighter;
+  display: inline-block;
+  width: 100px;
+}
+
+header .navigation .select:hover {
+  color: rgb(195, 195, 195);
+}
+
+article {
+  position: relative;
+  overflow: hidden;
+  top: 200px;
+}
+
+article .img-holder {
+  width: 200px;
+  height: 500px;
+}
+
+article .artwork {
+  position: relative;
+  overflow: hidden;
+  max-width: 400px;
+  max-height: auto;
+}
