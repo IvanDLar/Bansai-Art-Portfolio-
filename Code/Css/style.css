@@ -56,6 +56,7 @@
   font-family: "PT Serif";
   margin: 0;
   padding: 0;
+  background-color: rgb(244, 243, 241);
 }
 
 header {
@@ -75,6 +76,7 @@ header .nav-bar {
 header .navigation {
   padding: 0%;
 }
+
 header .navigation .select {
   font-family: "Pt Serif R-400-Italic";
   font-size: 20px;
@@ -88,19 +90,49 @@ header .navigation .select:hover {
 }
 
 article {
+  text-align: center;
   position: relative;
   overflow: hidden;
   top: 200px;
 }
 
 article .img-holder {
+  position: relative;
   width: 200px;
-  height: 500px;
+  height: 192.98px;
+  overflow: hidden;
+  display: inline-block;
 }
 
-article .artwork {
-  position: relative;
-  overflow: hidden;
-  max-width: 400px;
-  max-height: auto;
+article .img-holder:hover .artwork {
+  opacity: 0.5;
+}
+
+article .img-holder:hover .hover-title {
+  opacity: 1;
+}
+
+article .img-holder .hover-title {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+article .hover-title .title {
+  color: black;
+}
+
+article .img-holder .artwork {
+  opacity: 1;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  backface-visibility: hidden;
+  transition: 0.5s ease;
+  margin: auto;
 }
